@@ -1,0 +1,5 @@
+secrets.properties
+
+*.log
+
+node_modules/
