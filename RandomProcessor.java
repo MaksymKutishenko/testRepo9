@@ -9,7 +9,6 @@ public class RandomProcessor {
             numbers[i] = random.nextInt(100);
         }
 
-        System.out.println("Generated numbers:");
         for (int n : numbers) {
             System.out.print(n + " ");
         }
@@ -17,9 +16,13 @@ public class RandomProcessor {
 
         System.out.println("Even numbers:");
         for (int n : numbers) {
-            if (n % 2 == 0) {
+            if (isEven(n)) {
                 System.out.print(n + " ");
             }
         }
+    }
+
+    private static boolean isEven(int n) {
+        return n % 2 == 0;
     }
 }
