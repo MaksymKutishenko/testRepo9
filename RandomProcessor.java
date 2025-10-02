@@ -22,6 +22,8 @@ public class RandomProcessor {
         }
     }
 
+
+    // todo move to utils
     private static boolean isEven(int n) {
         return n % 2 == 0;
     }
